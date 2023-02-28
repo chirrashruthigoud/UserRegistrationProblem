@@ -6,7 +6,7 @@ namespace UserRegistrationProblem
     {
         public static void DisValidPassValid()
         {
-            Console.WriteLine("Enter a password Like :- Abc1234$ , P@ssw0rd1 , 12Monkeys : ");
+            Console.WriteLine("Enter a password Like :- Abc1234$ , P@ssw0rd94 , 14Monkeys : ");
             string password = Console.ReadLine();
 
             if (!Regex.IsMatch(password, @"^(?=.*\d)[^\s]{8,}$"))
