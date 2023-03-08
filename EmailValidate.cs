@@ -9,12 +9,17 @@ namespace UserRegistrationProblem
 {
      class EmailValidate
     {
-        public bool ValidateEmail(string email)
+        public string message = "Exception Not Occur";
+        public void validate(string firstName, string lastName, String email, string mobile, string password)
         {
-
-            string pattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
-            Regex regex = new Regex(pattern);
-            return regex.IsMatch(email);
+            if (firstName == null && lastName == null && email == null && mobile == null && password == null)
+            {
+                throw new Exception("All details is not filled Exception");
+            }
+            else
+            {
+                Console.WriteLine("Message : " + message);
+            }
         }
     }
 }
